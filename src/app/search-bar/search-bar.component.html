@@ -1,0 +1,7 @@
+<div class="search-bar" style="max-width: 100%;">
+    <label>search</label>
+    <input type="search" class="form-control" [(ngModel)] = "value" style="max-width: 100%;"/>
+    </div>
+    <button type="button" class="btn btn-danger" style="margin-top: 10px;" (click)="onClickSearch()">Recherche</button>  
+
+<app-search-list [videos]=videos [videoId]=videoId ></app-search-list>

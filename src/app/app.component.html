@@ -1,0 +1,39 @@
+<div class="row" >
+  <h1 class="col-12" style="text-align: center;"> Splitube</h1>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4">
+            <div class="container-fluid">
+              <div class="row">
+                <app-search-bar videoId="0" ></app-search-bar>
+              </div>
+            </div>
+          </div>
+          <div class="col-8">
+            <app-video-yt videoId="0"></app-video-yt>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-8">
+            <!-- ngFor -->
+            <app-video-yt videoId="1"></app-video-yt>          
+          </div>
+          <div class="col-4">
+            <app-search-bar videoId="1"></app-search-bar>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

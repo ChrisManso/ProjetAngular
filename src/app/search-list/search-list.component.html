@@ -1,0 +1,61 @@
+<!-- <div class="search-list" style="max-width: 100%;">
+    <div class="column" *ngFor="let video of videos">
+      <div class="card">
+        <div class="image">
+          <img [src]="video.thumbnail">
+        </div>
+        <div class="content">
+          <a class="header" style="margin: 1em 0 1em 0;">{{ video.title }}</a>
+          <div class="meta">
+            <span class="date" style="font-weight: bolder;">
+              <a [href]="video.channelUrl" target="_blank">{{ video.channelTitle }}</a>
+            </span>
+          </div>
+        </div>
+        <a [href]="video.videoUrl" target="_blank" class="extra content">
+          <button mat-raised-button color="warn" class="watch-button">
+            Watch
+          </button>
+        </a>
+      </div>
+    </div>
+  </div> -->
+  <!-- <div class="row">
+    <div class="column">
+    <div class = "row" *ngFor="let video of videos">
+      <div class="thumbnail" style="height: 10em;">
+            <img [src]="video.thumbnail" alt="..." class="col-xs-4 rounded img-fluid float-left">
+            <div class="col-xs-4">
+                <a class="header" style="margin: 1em 0 1em 0;">{{ video.title }}</a>
+                <div class="meta">
+                    <span class="date" style="font-weight: bolder;">
+                        <a [href]="video.channelUrl" target="_blank">{{ video.channelTitle }}</a>
+                    </span>
+                </div>
+            </div>
+        <a [href]="video.videoUrl" target="_blank" class="extra content col-xs-4">
+            <button mat-raised-button color="warn" class="watch-button">
+              Watch
+            </button>
+        </a>
+      </div>
+    </div>
+    </div>
+  </div> -->
+  <div class="row">
+  <div class="card" style="max-width: auto; max-height: auto;" *ngFor="let video of videos" >
+    <div class="row" style="max-width: auto; max-height: 90px;" >
+      <div class="col-5">
+        <img [src]="video.thumbnail" class="card-img" style="width: 90%; height: 90px;text-align: center;" alt="">
+      </div>
+      <div class="col-7">
+        <div class="container-fluid">
+          <div class="row">
+          <p class="card-title" (click)="onClickDisplay(video)">{{ video.title }}</p>
+          <p class="card-text">{{ video.channelTitle }}</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
